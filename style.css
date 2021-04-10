@@ -148,13 +148,16 @@ nav {
 }
 
 
+
+
+/* --- Page Content --- */
+
 #about,
 #work,
 #contact {
+
     height: 100%;
 }
-
-/* --- Page Content --- */
 
 /* --- Home --- */
 
@@ -234,13 +237,41 @@ nav {
 }
 .about-column p {
     padding: 1rem 0;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
 }
 .about-column img {
     border-radius: .5rem;
     width: 100%;
 }
+
+
+.skill-title {
+    margin-top: 1rem;
+}
+
+.skills-bar {
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+    border-radius: 1rem;
+}
+
+.skills {
+    border-radius: 1rem;
+    width: 100%;
+    padding: 2px 1rem;
+    text-align: right;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.26);
+    background-image: linear-gradient(var(--header-color), silver, rgb(40, 81, 97));
+}
+
+.html {width: 80%;}
+.css {width: 75%;}
+.js {width: 55%;}
+.jQ {width: 40%;}
+.a-i {width: 60%;}
+.a-p {width: 30%;}
+.figma {width: 30%;}
 
 
 /* --- Work --- */
@@ -255,12 +286,13 @@ nav {
     text-align: center;
     padding: 8px 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
     transition: all 300ms ease;
 }
 .work-item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: .5rem;
+    border-radius: 0;
 }
 .work-item img {
     width: 100%;
