@@ -47,5 +47,19 @@
         "link": "https://smeu-dragos2000.github.io/Reaction-Timer/",
         "img": "images/work-Reaction Timer.JPG",
         "description": "A Vue game to test your reflexes"
+    },
+    {
+        "index": 7,
+        "title": "Wedding Quartet",
+        "link": "https://smeu-dragos2000.github.io/WeddingQuartet/",
+        "img": "images/work-Wedding Quartet.JPG",
+        "description": "A page for a Wedding Quartet"
+    },
+    {
+        "index": 8,
+        "title": "Piano keyboard",
+        "link": "https://smeu-dragos2000.github.io/Piano/",
+        "img": "images/work-Piano keyboard.JPG",
+        "description": "Use your keyboard to play the piano."
     }
 ]
