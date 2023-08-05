@@ -2,42 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Smeu Dragos</title>
 </head>
 <body>
-    <header>
-        
-        <nav>
-            <div id="logo">Smeu Dragos</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
+
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Smeu Dragos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
 
-    </header>
-
-    <main>
+        <!-- Home page -->
         <section id="home">
             <div id="background-images">
-                <img src="images/artist-back.png" alt="Artist">
-                <img src="images/coder-back.png" alt="Artist">
+                <img src="/images/artist-back.png" alt="Artist">
+                <img src="/images/coder-back.png" alt="Artist">
             </div>
-                <img class="mug-shot" id="front-pose" src="./images/me-front.png" alt="Front pose">
-                <img class="mug-shot" id="left-pose" src="./images/me-left.png" alt="Left pose">
-                <img class="mug-shot" id="right-pose" src="./images/me-right.png" alt="Right pose">
+                
+                <img class="mug-shot" id="left-pose" src="/images/me-left.png" alt="Left pose">
+                <img class="mug-shot" id="right-pose" src="/images/me-right.png" alt="Right pose">
+                <img class="mug-shot" id="front-pose" src="/images/me-front.png" alt="Front pose">
             
                 <div class="description-container">
                     <div class="description-column" id="artist">
@@ -52,7 +62,8 @@
                 </div>
         </section>
 
-        <section id="about">
+        <!-- About Page -->
+        <section id="about" class="container">
             <h1>About</h1>
                 
                 <div class="about">
@@ -62,179 +73,62 @@
                         I like a good challenge, physical or mental, I'm a firm believer that only by overcoming obstacles you can grow.
                         In my free time I like hiking, sports and spending time with my friends.
                         </p>
-                        <div id="skills">
-                            <h2>Skills</h2>
-                        </div>
                     </div>
-                    <div class="about-column"><img src="./images/me.jpg" alt=""></div>
+                    <div class="about-column"><img src="/images/me.jpg" alt=""></div>
 
                 </div>
                 
             </div>
         </section>
 
-        <section id="work">
+        <!-- Work Page -->
+        <section id="work" class="container">
             <h1>Work</h1>
-            <div id="grid-container"></div>
+            <div id="grid-container">
+                <!-- Inject Gallery here -->
+            </div>
         </section>
 
-        <section id="contact">
-            <h1>contact</h1>
-                <div class="contact-container">
-
-                    <div class="contact-column" id="contact-form">
-                        <form action="" method="post">
-                            <div class="input-row">
-                                <label for="">Name</label><br>
-                                <input type="text" name="userName" id="userName" placeholder="Your name">
-                            </div>
-                            <div class="input-row">
-                                <label for="">Email</label><br>
-                                <input type="email" name="userEmail" id="userEmail" placeholder="Your email address">
-                            </div>
-                            <div class="input-row">
-                                <label for="">Subject</label><br>
-                                <input type="text" name="subject" id="subject" placeholder="Message title">
-                            </div>
-                            <div class="input-row">
-                                <label for="">Message</label><br>
-                                <textarea name="message" id="message" cols="20" rows="10" placeholder="Your Message"></textarea>
-                            </div>
-
-                            <input type="submit" name="send" id="btn-submit" value="Send" />
-                        </form>
-                    </div>
-
-                    <div class="contact-column" id="map-column">
-                    <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.629519310745!2d24.372014515765045!3d45.11357766479085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474d38c800571e3d%3A0xf70552580f686bb4!2sStrada%20Nicolae%20Titulescu%2C%20R%C3%A2mnicu%20V%C3%A2lcea!5e0!3m2!1sro!2sro!4v1615027136547!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+        <!-- Modal -->
+        <div class="modal-container">
+            <!-- <div class="container"> -->
+                <div class="myModal">
+                 <!-- Inject Gallery here -->
+                 
                 </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <p> &#169; 2021 Smeu Dragos</p>
-            <div id="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100065477285927" target="blank">
-                    <img src="images/logo-facebook-small.png" alt="" class="social-media-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/smeu-dragos-117367199/" target="blank">
-                    <img src="images/logo-linkedin-small.png" alt="" class="social-media-icon">
-                </a>
-                <a href="https://github.com/smeu-dragos2000" target="blank">
-                    <img src="images/logo-github-small.png" alt="" class="social-media-icon">
-                </a>
-            </div>
-        </div>
-    </footer>
-    
-</body>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="jquery-3.5.1.min.js"></script>
-    <script defer src="app.js"></script>
-    <title>Smeu Dragos</title>
-</head>
-<body>
-    <header>
-        
-        <nav>
-            <div id="logo">Smeu Dragos</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </div>
-        </nav>
-
-    </header>
-
-    <main>
-        <section id="home">
-            <div id="background-images">
-                <img src="images/artist-back.png" alt="Artist">
-                <img src="images/coder-back.png" alt="Artist">
-            </div>
-                <img class="mug-shot" id="front-pose" src="./images/me-front.png" alt="Front pose">
-                <img class="mug-shot" id="left-pose" src="./images/me-left.png" alt="Left pose">
-                <img class="mug-shot" id="right-pose" src="./images/me-right.png" alt="Right pose">
+            <!-- </div> -->
+            <button class="closeModal">x</button>
+            <button id="arrow-left"> &#8678; </button>
+            <button id="arrow-right"> &#8680; </button>
             
-                <div class="description-container">
-                    <div class="description-column" id="artist">
-                        <h1>Artist</h1>
-                        <p>I'm an artist passionate about classic and digital painting, woodwork and 3D sculpting</p>
-                    </div>
-                    <div class="description-column"></div>
-                    <div class="description-column" id="coder">
-                        <h1>&#x276C coder &#x276D</h1>
-                        <p>I'm an web-developer passionate about web and development</p>
-                    </div>
-                </div>
-        </section>
-
-        <section id="about">
-            <h1>About</h1>
-                
-                <div class="about">
-                    <div class="about-column">
-                        <h2>Hello!</h2>
-                        <p>I'm a web enthusiast with a passion in front-end development and graphic design and a artist with 24 years worth of knowledge in painting and woodwork.
-                        I like a good challenge, physical or mental, I'm a firm believer that only by overcoming obstacles you can grow.
-                        In my free time I like hiking, sports and spending time with my friends.
-                        </p>
-                        <div id="skills">
-                            <h2>Skills</h2>
-                        </div>
-                    </div>
-                    <div class="about-column"><img src="./images/me.jpg" alt=""></div>
-
-                </div>
-                
-            </div>
-        </section>
-
-        <section id="work">
-            <h1>Work</h1>
-            <div id="grid-container"></div>
-        </section>
-
-        <section id="contact">
-            <h1>contact</h1>
+        </div>
+        
+    
+        <!-- Contact Page -->
+        <section id="contact" class="container">
+            <h1>Contact</h1>
                 <div class="contact-container">
 
                     <div class="contact-column" id="contact-form">
                         <form action="" method="post">
                             <div class="input-row">
-                                <label for="">Name</label><br>
+                                <!-- <label for="">Name</label><br> -->
                                 <input type="text" name="userName" id="userName" placeholder="Your name">
                             </div>
                             <div class="input-row">
-                                <label for="">Email</label><br>
+                                <!-- <label for="">Email</label><br> -->
                                 <input type="email" name="userEmail" id="userEmail" placeholder="Your email address">
                             </div>
                             <div class="input-row">
-                                <label for="">Subject</label><br>
+                                <!-- <label for="">Subject</label><br> -->
                                 <input type="text" name="subject" id="subject" placeholder="Message title">
                             </div>
                             <div class="input-row">
-                                <label for="">Message</label><br>
-                                <textarea name="message" id="message" cols="20" rows="10" placeholder="Your Message"></textarea>
+                                <!-- <label for="">Message</label><br> -->
+                                <textarea name="message" id="message" cols="20" rows="5" placeholder="Your Message"></textarea>
                             </div>
 
-                            <input type="submit" name="send" id="btn-submit" value="Send" />
+                            <button type="submit" name="send" id="btn-submit" value="Send">Send</button>
                         </form>
                     </div>
 
@@ -243,24 +137,7 @@
                     </div>
                 </div>
         </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <p> &#169; 2021 Smeu Dragos</p>
-            <div id="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100065477285927" target="blank">
-                    <img src="images/logo-facebook-small.png" alt="" class="social-media-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/smeu-dragos-117367199/" target="blank">
-                    <img src="images/logo-linkedin-small.png" alt="" class="social-media-icon">
-                </a>
-                <a href="https://github.com/smeu-dragos2000" target="blank">
-                    <img src="images/logo-github-small.png" alt="" class="social-media-icon">
-                </a>
-            </div>
-        </div>
-    </footer>
     
 </body>
+
 </html>
