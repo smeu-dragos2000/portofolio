@@ -64,7 +64,7 @@ const workRequest = fetch('data/work.json')
     .then (data => {
         data.forEach(element => {
             let itemTitle = `<h3 class="item-title">${element.title}</h3>`;
-            let itemImage = `<img src="${element.img}">`;
+            let itemImage = `<img src="./${element.img}">`;
             let itemDescription = `<p>${element.description}</p>`
             let itemLink = element.link;
             let itemId = element.index
