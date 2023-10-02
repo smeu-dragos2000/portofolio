@@ -4,6 +4,7 @@
         "title": "Ginivisa",
         "link": "https://ginivisa.com/",
         "img": "images/work-Ginivisa.JPG",
+        "thumb": "images/work-Ginivisa - thumb.JPG",
         "description": "Design for a startup tourism company"
     },
     {
@@ -11,6 +12,7 @@
         "title": "Classic clock",
         "link": "https://smeu-dragos2000.github.io/clock-classic/",
         "img": "images/work-Classic clock.JPG",
+        "thumb": "images/work-Classic clock - thumb.JPG",
         "description": "A simple project of a classic clock"
     },
     {
@@ -18,6 +20,7 @@
         "title": "Digital clock",
         "link": "https://smeu-dragos2000.github.io/clock-digital/",
         "img": "images/work-Future clock.JPG",
+        "thumb": "images/work-Future clock - thumb.JPG",
         "description": "A simple project of a digital clock with a light/dark theme"
     },
     {
@@ -25,6 +28,7 @@
         "title": "Wisdom wall",
         "link": "https://smeu-dragos2000.github.io/wisdom-wall/",
         "img": "images/work-Wisdom Wall.JPG",
+        "thumb": "images/work-Wisdom Wall - thumb.JPG",
         "description": "A small random quote generator"
     },
     {
@@ -32,6 +36,7 @@
         "title": "Artwork Gallery",
         "link": "https://smeu-dragos2000.github.io/galerie-desene/",
         "img": "images/work-Desene.JPG",
+        "thumb": "images/work-Desene - thumb.JPG",
         "description": "A gallery with my personal artwork"
     },
     {
@@ -39,27 +44,31 @@
         "title": "DJ Adryan",
         "link": "https://smeu-dragos2000.github.io/dj-adryan/",
         "img": "images/work-DJ Adryan.JPG",
+        "thumb": "images/work-DJ Adryan - thumb.JPG",
         "description": "A personal website for an amazing DJ"
     },
     {
         "index": 6,
         "title": "Reaction Timer",
         "link": "https://smeu-dragos2000.github.io/Reaction-Timer/",
-        "img": "images/work-Reaction Timer.JPG",
+        "img": "images/work-Reaction Timer.jpg",
+        "thumb": "images/work-Reaction Timer - thumb.jpg",
         "description": "A Vue game to test your reflexes"
     },
     {
         "index": 7,
         "title": "Wedding Quartet",
         "link": "https://smeu-dragos2000.github.io/WeddingQuartet/",
-        "img": "images/work-Wedding Quartet.JPG",
+        "img": "images/work-Wedding Quartet.jpg",
+        "thumb": "images/work-Wedding Quartet - thumb.jpg",
         "description": "A page for a Wedding Quartet"
     },
     {
         "index": 8,
         "title": "Piano keyboard",
         "link": "https://smeu-dragos2000.github.io/Piano/",
-        "img": "images/work-Piano keyboard.JPG",
+        "img": "images/work-Piano keyboard.jpg",
+        "thumb": "images/work-Piano keyboard - thumb.jpg",
         "description": "Use your keyboard to play the piano."
     }
 ]

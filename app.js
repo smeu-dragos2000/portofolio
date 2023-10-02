@@ -55,6 +55,7 @@ window.onscroll = () => {
     }); 
 }
 
+
 // --- Work Gallery populate and Modal ---
 
 let gridContainer = document.querySelector("#grid-container");
@@ -63,13 +64,13 @@ const workRequest = fetch('data/work.json')
     .then (response => response.json())
     .then (data => {
         data.forEach(element => {
-            let itemTitle = `<h3 class="item-title">${element.title}</h3>`;
-            let itemImage = `<img src="./${element.img}">`;
+            let itemTitle = `<h5 class="item-title">${element.title}</h5>`;
+            let itemImage = `<img src="${element.img}">`;
+            let itemThumb = `<img src="${element.thumb}">`;
             let itemDescription = `<p>${element.description}</p>`
             let itemLink = element.link;
             let itemId = element.index
-            // let item = `<div class="grid-item"><a href="${itemLink}" target="blank">${itemTitle} ${itemImage} ${itemDescription}</a></div>`
-            let item = `<div id ="${itemId}" class="grid-item">${itemTitle} ${itemImage}</div>`
+            let item = `<div id ="${itemId}" class="grid-item">${itemTitle} ${itemThumb}</div>`
 
             gridContainer.innerHTML += item;
             })
@@ -77,7 +78,7 @@ const workRequest = fetch('data/work.json')
             // -- Modal --
 
             let lightBoxItem = document.querySelectorAll(".grid-item");
-            let closeButton = document.querySelector(".closeModal");
+            let closeButton = document.querySelector("#closeModal");
             let modalContainer = document.querySelector(".modal-container");
             let modal = document.querySelector(".myModal");
 
@@ -125,8 +126,8 @@ const workRequest = fetch('data/work.json')
                 modalContainer.style.display = "none";
             }
 
-            lightBoxItem.forEach(() => addEventListener("click", showLightBox))
-            closeButton.addEventListener("click", closeLightBox)
+            lightBoxItem.forEach(() => addEventListener("click", showLightBox));
+            closeButton.addEventListener("click", closeLightBox);
     });
 
 
