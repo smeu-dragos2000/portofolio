@@ -22,6 +22,7 @@
 
 body {
     background-color: black;
+    height: 100%;
 }
 a {
     color: var(--blue-light);
@@ -42,6 +43,7 @@ a:hover {
     background-color: var(--blue-light);
     background-image: conic-gradient(45deg, var(--blue-light), var(--blue-dark));
     background-image: linear-gradient(45deg, var(--blue-light), var(--blue-dark));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
@@ -55,7 +57,7 @@ a:hover {
 section {
     min-height: 100vh;
     padding-top: 70px;
-
+    /* outline: 1px solid yellow; */
 }
 section h1 {
     text-align: center;
@@ -323,12 +325,21 @@ nav button {
 
 /* --- Contact Page --- */
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-container {
     display: grid;
     height: 100%;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
     padding-bottom: 10px;
+    /* outline: 1px solid red; */
 }
 .contact-column {
     display: flex;
