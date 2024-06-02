@@ -3,12 +3,20 @@
         "index": 0,
         "title": "Ginivisa",
         "link": "https://ginivisa.com/",
-        "img": "images/work-Ginivisa.JPG",
-        "thumb": "images/work-Ginivisa - thumb.JPG",
+        "img": "images/work-Ginivisa.jpg",
+        "thumb": "images/work-Ginivisa - thumb.jpg",
         "description": "Design for a startup tourism company"
     },
     {
         "index": 1,
+        "title": "Meta Phone",
+        "link": "https://smeu-dragos2000.github.io/meta-phone/index.html",
+        "img": "images/Meta-Phone.jpg",
+        "thumb": "images/Meta-Phone - thumb.jpg",
+        "description": "Design for a startup crypto-phone company based in the UK"
+    },
+    {
+        "index": 2,
         "title": "Classic clock",
         "link": "https://smeu-dragos2000.github.io/clock-classic/",
         "img": "images/work-Classic clock.JPG",
@@ -16,7 +24,7 @@
         "description": "A simple project of a classic clock"
     },
     {
-        "index": 2,
+        "index": 3,
         "title": "Digital clock",
         "link": "https://smeu-dragos2000.github.io/clock-digital/",
         "img": "images/work-Future clock.JPG",
@@ -24,7 +32,7 @@
         "description": "A simple project of a digital clock with a light/dark theme"
     },
     {
-        "index": 3,
+        "index": 4,
         "title": "Wisdom wall",
         "link": "https://smeu-dragos2000.github.io/wisdom-wall/",
         "img": "images/work-Wisdom Wall.JPG",
@@ -32,7 +40,7 @@
         "description": "A small random quote generator"
     },
     {
-        "index": 4,
+        "index": 5,
         "title": "Artwork Gallery",
         "link": "https://smeu-dragos2000.github.io/galerie-desene/",
         "img": "images/work-Desene.JPG",
@@ -40,7 +48,7 @@
         "description": "A gallery with my personal artwork"
     },
     {
-        "index": 5,
+        "index": 6,
         "title": "DJ Adryan",
         "link": "https://smeu-dragos2000.github.io/dj-adryan/",
         "img": "images/work-DJ Adryan.JPG",
@@ -48,7 +56,7 @@
         "description": "A personal website for an amazing DJ"
     },
     {
-        "index": 6,
+        "index": 7,
         "title": "Reaction Timer",
         "link": "https://smeu-dragos2000.github.io/Reaction-Timer/",
         "img": "images/work-Reaction Timer.jpg",
@@ -56,7 +64,7 @@
         "description": "A Vue game to test your reflexes"
     },
     {
-        "index": 7,
+        "index": 8,
         "title": "Wedding Quartet",
         "link": "https://smeu-dragos2000.github.io/WeddingQuartet/",
         "img": "images/work-Wedding Quartet.jpg",
@@ -64,7 +72,7 @@
         "description": "A page for a Wedding Quartet"
     },
     {
-        "index": 8,
+        "index": 9,
         "title": "Piano keyboard",
         "link": "https://smeu-dragos2000.github.io/Piano/",
         "img": "images/work-Piano keyboard.jpg",
